@@ -30,6 +30,9 @@ WebDriver ldriver;
 	@CacheLookup
 	WebElement btnLogin;	
 	
+	@FindBy(xpath="/html/body/div[3]/div/ul/li[15]/a")
+	WebElement logout;
+	
 	
 	public void setUserName(String uname)
 	{
@@ -47,5 +50,8 @@ WebDriver ldriver;
 		btnLogin.click();
 	}	
 	
-	
+	public void clickLogout() {
+		logout.click();
+		
+	}
 }

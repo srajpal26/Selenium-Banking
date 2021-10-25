@@ -2,31 +2,31 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-10-14T09:49:17Z" name="Banking" finished-at="2021-10-14T09:49:23Z" duration-ms="5383">
+  <suite started-at="2021-10-23T09:35:25Z" name="Banking" finished-at="2021-10-23T09:35:39Z" duration-ms="13953">
     <groups>
     </groups>
-    <test started-at="2021-10-14T09:49:17Z" name="BankingApp Test" finished-at="2021-10-14T09:49:23Z" duration-ms="5383">
-      <class name="TestCases.LoginTC">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:TestCases.LoginTC@ba54932]" started-at="2021-10-14T09:49:17Z" name="setup" finished-at="2021-10-14T09:49:21Z" duration-ms="3929" status="PASS">
+    <test started-at="2021-10-23T09:35:25Z" name="BankingApp Test" finished-at="2021-10-23T09:35:39Z" duration-ms="13953">
+      <class name="TestCases.AddCustTC">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:TestCases.AddCustTC@ba54932]" started-at="2021-10-23T09:35:25Z" name="setup" finished-at="2021-10-23T09:35:29Z" duration-ms="3664" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[edge]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginTest()[pri:0, instance:TestCases.LoginTC@ba54932]" started-at="2021-10-14T09:49:21Z" name="loginTest" finished-at="2021-10-14T09:49:23Z" duration-ms="1241" status="PASS">
+        <test-method signature="addNewCust()[pri:0, instance:TestCases.AddCustTC@ba54932]" started-at="2021-10-23T09:35:29Z" name="addNewCust" finished-at="2021-10-23T09:35:39Z" duration-ms="9925" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.LoginTC@ba54932]" started-at="2021-10-14T09:49:23Z" name="tearDown" finished-at="2021-10-14T09:49:23Z" duration-ms="61" status="PASS">
+        </test-method> <!-- addNewCust -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:TestCases.AddCustTC@ba54932]" started-at="2021-10-23T09:35:39Z" name="tearDown" finished-at="2021-10-23T09:35:39Z" duration-ms="204" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- TestCases.LoginTC -->
+      </class> <!-- TestCases.AddCustTC -->
     </test> <!-- BankingApp Test -->
   </suite> <!-- Banking -->
 </testng-results>

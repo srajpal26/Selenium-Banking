@@ -9,10 +9,11 @@
 	</listeners>
 
 	<test name="BankingApp Test">
-		<parameter name="browser" value="chrome" />
+		<parameter name="browser" value="firefox" />
 		<classes>
-			<class name="TestCases.LoginTC" />
-			<!--  <class name="com.inetbanking.testCases.TC_LoginDDT_002" />-->
+			 <class name="TestCases.LoginTC" /> 
+		   <!-- <class name="TestCases.LoginTCDDT" /> -->
+		   <!-- <class name="TestCases.AddCustTC"/> -->
 
 		</classes>
 

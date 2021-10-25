@@ -42,9 +42,9 @@ Properties pro;
 	return chromepath;
 	}
 	
-	public String getIEPath()
+	public String getMSEDGEPath()
 	{
-	String iepath=pro.getProperty("iepath");
+	String iepath=pro.getProperty("edgepath");
 	return iepath;
 	}
 	

@@ -11,6 +11,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.AfterClass;
@@ -46,14 +47,15 @@ ReadConfig readconfig=new ReadConfig();
 			System.setProperty("webdriver.gecko.driver",readconfig.getFirefoxPath());
 			driver = new FirefoxDriver();
 		}
-		else if(br.equals("ie"))
+		else if(br.equals("edge"))
 		{
-			System.setProperty("webdriver.ie.driver",readconfig.getIEPath());
-			driver = new InternetExplorerDriver();
+			System.setProperty("webdriver.edge.driver",readconfig.getMSEDGEPath());
+			driver = new EdgeDriver();
 		}
 		
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 		driver.get(baseURL);
+		driver.manage().window().maximize();
 	}
 	
 	@AfterClass
@@ -70,14 +72,15 @@ ReadConfig readconfig=new ReadConfig();
 		System.out.println("Screenshot taken");
 	}
 	
-	public String randomestring()
-	{
-		String generatedstring=RandomStringUtils.randomAlphabetic(8);
-		return(generatedstring);
-	}
+	public String randomemail() {
+		  String generatedstring=	 RandomStringUtils.randomAlphabetic(5);
+		  return generatedstring;
+		}
+		
+		public static String randomeNum() {
+			String generatedString2 = RandomStringUtils.randomNumeric(4);
+			return generatedString2;
+		}
 	
-	public static String randomeNum() {
-		String generatedString2 = RandomStringUtils.randomNumeric(4);
-		return (generatedString2);
-	}
+	
 }
