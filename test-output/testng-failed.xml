@@ -7,13 +7,13 @@
   <test thread-count="5" name="BankingApp Test(failed)">
     <parameter name="browser" value="edge"/>
     <classes>
-      <class name="TestCases.AddCustTC">
+      <class name="TestCases.EditCustTC">
         <methods>
-          <include name="addNewCust"/>
           <include name="tearDown"/>
           <include name="setup"/>
+          <include name="editCust"/>
         </methods>
-      </class> <!-- TestCases.AddCustTC -->
+      </class> <!-- TestCases.EditCustTC -->
     </classes>
   </test> <!-- BankingApp Test(failed) -->
 </suite> <!-- Failed suite [Banking] -->
